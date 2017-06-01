@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>portfolio</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+
+  
+  
+</head>
+
+<body>
+  <head>
+  <link href="https://fonts.googleapis.com/css?family=Poppins|Oswald|Montserrat" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <style>
+    body{
+      background-color:#51758D;
+    }
+    .selector{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color:#D93240; 
+      z-index:1;
+    }
+    .btn{
+      font-family:Poppins;
+      background-color:Transparent;
+      border:none;
+      color:#aaa;
+    }
+    .btn:hover{
+      background-color:#96CEB4;
+      border-color:#96CEB4;
+      color:#333;
+    }
+      .card1{
+      background-color:#A8BBC9;
+      width:80%;
+      box-shadow: 0px 0px 10px #555;
+      margin-top:60px;
+      padding:10px;
+        
+    }
+    .card2{
+      background-color:#FFF5C3;
+      width:80%;
+      box-shadow: 0px 0px 10px #555;
+      margin-top:-5px;
+      padding:10px;
+    }
+    .endcard{
+      background-color:#A8BBC9;
+      width:100%;
+      box-shadow: 0px 0px 10px #555;
+      margin-top:-5px;
+      padding:10px;
+    }
+    .footer{
+      background-color:#D93240;
+      width:100%;
+      box-shadow: 0px 0px 10px #555;
+      margin-top:-5px;
+      padding:10px;
+    }
+    label:hover{
+      color:#D93240;
+    }
+  </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+  </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+  new WOW().init();
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+<body>
+  <!-- start of HTML-->
+  <div class="selector" style="box-shadow: 0px 0px 10px #555;"><h1 style="padding:10px 15% 5px 15%;font-family:Oswald;color:white">TechnoSap</hi>
+<a href="#contact"><button class="btn btn-primary" style="float:right;margin:2px" id="btn-contact"><b> CONTACT</b></button></a>
+<a href="#portfolio"><button href="#portfolio" class="btn btn-primary" style="float:right;margin:2px" id="btn-portfolio"><b> PORTFOLIO</b></button></a>
+<a href="#about"><button class="btn btn-primary" style="float:right;margin:2px" id="btn-about"><b> ABOUT</b></button></a>
+</div>
+  <div class="container card1" id="about">
+    <div class="row wow fadeInRight" data-wow-delay="1s" >
+    <div class="col-md-7" style="vertical-align:middle;">
+      <p style="font-family:Montserrat;padding:20px;padding-top:50px;text-align:right;color:#333;font-size:20px"><br><br><br>Full Stack/Android Developer, Linux Lover, and Freelancer with 3+ Years experience in Graphics Design, App Development and Game Design on UE 4</p>
+      <hr style="height:3px;width:70%;border:none;color:#fff;background-color:#555;margin-top:-20px"></hr>
+      <p style="font-family:Montserrat;padding:20px;padding-top:-10px;text-align:right;color:#333;font-size:20px">Full Stack/Android Developer-Freelancer-Graphics Design</p>
+      
+    </div>
+    <div class="col-md-5" >
+    <img id="profile" class="img-responsive" src="https://technosap.github.io/static/backimg.JPG" style="padding:50px;width:100%;border-radius:50%;border:20px"></img>
+    </div>
+    </div>
+  </div>
+<div class="container card2" id="portfolio">
+  <h1 class="text-center wow fadeIn" data-wow-delay="2s" style="font-Family:Poppins;padding-top:20px"><b>Portfolio</b></h1>
+   <hr style="height:5px;width:70%;border:none;color:#fff;background-color:#444;" class="wow fadeIn" data-wow-delay="2s"></hr>
+<div class="row ">
+<div class="col-md-6">
+  <img class="img-responsive wow tada" data-wow-delay="3s" src="https://technosap.github.io/static/back4.png" style="padding:20px;width:100%;"></img>
+
+<img class="img-responsive wow tada" data-wow-delay="1s" src="https://technosap.github.io/static/up2.png" style="padding:20px;width:100%;"></img>
+  <img class="img-responsive wow tada" data-wow-delay="1s" src="https://technosap.github.io/static/m1.png" style="padding:20px;width:100%;"></img>
+</div>
+<div class="col-md-6">
+  <img class="img-responsive wow tada" data-wow-delay="3s" src="https://technosap.github.io/static/up.png" style="padding:20px;width:100%;"></img>
+  <img class="img-responsive wow tada" src="https://technosap.github.io/static/back5.jpg" data-wow-delay="1s" style="padding:20px;width:100%;"></img>
+<img class="img-responsive wow tada" src="https://technosap.github.io/static/up3.png" data-wow-delay="1s" style="padding:20px;width:100%;"></img>
+</div>
+</div>
+<h1 class="text-center" ><&frasl;></h1>
+<hr/>
+<div id="contact" class="wow slideInLeft" data-wow-delay="2s">  
+  <h1 class="text-center" style="font-Family:Poppins;padding-top:20px"><b>Contact</b></h1>
+   <hr style="height:5px;width:70%;border:none;color:#fff;background-color:#444;"></hr>
+<div class="row">
+<div class="col-md-6">
+  <form style="padding:40px">
+   <label style="text-decoration:underline;font-family:Montserrat">Name:*</label>
+  <input type="text" class="form-control" required> 
+    <label style="text-decoration:underline;font-family:Montserrat">Email:*</label>
+  <input type="text" class="form-control" required> 
+    <label style="text-decoration:underline;font-family:Montserrat">Subject:</label>
+  <input type="text" class="form-control"> 
+  <label style="text-decoration:underline;font-family:Montserrat">Message:*</label>
+  <input type="text" class="form-control" required> 
+    <br>
+    <button class="btn btn-primary">Submit</button>
+  </form>
+</div>
+<div class="col-md-6">
+  <p style="vertical-align:middle;font-family:Poppins;padding:60px">
+  Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, tips on how to solve your differential equations, or even random questions about the universe and the meaning of life, just feel free to drop me a line anytime.<br>
+I promise to reply A.S.A.P.
+    </p>
+ </div>
+</div>
+<h1 class="text-center" ><&frasl;></h1>
+</div>
+</div>
+<div class="container endcard">
+<div class="row">
+<div class="col-md-6 text-center" style="vertical-align:middle;font-family:Poppins;padding:50px">
+  <h2><b>ABOUT THIS PAGE</b></h1>
+  <p><br>Made by Technosap under <i class="fa fa-free-code-camp"></i></p>
+</div>
+<div class="col-md-6 text-center" style="vertical-align:middle;font-family:Poppins;padding:50px">
+  <h2><b>AROUND THE WEB</b></h1>
+  <h1>
+    <a href="https://github.com/technosap" class="social"><i class="fa fa-github"></i></a>
+    <a href="https://twitter.com/SappySm" class="social"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/saptarshi-m-083a3aa5/" class="social"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.facebook.com/saptarshi.sm" class="social"><i class="fa fa-facebook"></i></a>
+  </h1>
+ </div>
+</div>
+
+</div>
+<div class="container footer text-center">
+  <p style="vertical-align:middle;font-family:Poppins;padding:10px;color:white">Technosap<i class="fa fa-copyright"></i>2017. All Rights Reserved</p>
+</div>
+</body>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+
+  
+</body>
+</html>

@@ -1,0 +1,46 @@
+var recent_url="https://fcctop100.herokuapp.com/api/fccusers/top/recent";
+var all_time_url="https://fcctop100.herokuapp.com/api/fccusers/top/alltime";
+
+$.getJSON(recent_url,function(json){
+  ReactDOM.render(<CamperList items={json}/>, document.getElementById('fill'));
+});
+
+class Camper extends React.Component{
+  render(){
+    return <div className="block">
+           <div className="row">
+           <div className="col-sm-1">{this.props.slno}</div>
+           <div className="col-sm-5"><img src={this.props.img}></img>&nbsp;&nbsp;{this.props.name}</div>
+           <div className="col-sm-3">{this.props.atp}</div>
+           <div className="col-sm-3">{this.props.ptd}</div>
+           </div>    
+           <hr />
+           </div>;
+  }
+}
+class CamperList extends React.Component{
+  render(){
+    return <div>
+              {this.props.items.map((item,index) => (
+                <Camper slno={index+1} name={item.username} atp={item.alltime} ptd={item.recent} img={item.img}/>
+              ))}               
+           </div>;
+  }
+}
+
+$(".atp").click(function(){
+  $.getJSON(all_time_url,function(json){
+    ReactDOM.render(<CamperList items={json}/>, document.getElementById('fill')); 
+  });
+  $(".atp").html('<b>All Time Points</b> <i class="fa fa-arrow-down"></i>');
+  $(".ptd").html('Points in Last 30 Days');
+});
+
+$(".ptd").click(function(){
+  $.getJSON(recent_url,function(json){
+    ReactDOM.render(<CamperList items={json}/>, document.getElementById('fill')); 
+  });
+  $(".atp").html('All Time Points');
+  $(".ptd").html('<b>Points in Last 30 Days</b> <i class="fa fa-arrow-down"></i>');
+});
+

@@ -1,0 +1,54 @@
+var DisplayBox=React.createClass({
+  _updater:function(modified){
+    this.setState({value:modified});
+  },
+  _markup:function(inputs){
+    var ass = marked(inputs, {sanitize: true})
+    return(
+    {
+      __html:ass
+    }
+    );
+  },
+  getInitialState () {
+    return {
+      value:'Heading\n=======\n\nSub-heading\n-----------\n \n### Another deeper heading\n \nParagraphs are separated\nby a blank line.\n\nLeave 2 spaces at the end of a line to do a  \nline break\n\nText attributes *italic*, **bold**, \n`monospace`, ~~strikethrough~~ .\n\nShopping list:\n\n  * apples\n  * oranges\n  * pears\n\nNumbered list:\n\n  1. apples\n  2. oranges\n  3. pears\n\nThe rain---not the reign---in\nSpain.\n\n *[Herman Fassett](https://freecodecamp.com/hermanfassett)*'
+    };
+  },
+  render:function(){
+    console.log(this.state.value);
+        return (
+          <div class="container-fluid">
+          <h1>Marked</h1>
+            <div className="row">
+            <div className="col-md-6">
+              <Input vals={this.state.value} updateMethod={this._updater}/>
+            </div>
+            <div className="col-md-6">
+              <span dangerouslySetInnerHTML={this._markup(this.state.value)}></span>
+            </div>
+          </div>
+          </div>
+        );
+    }
+});
+
+var Input=React.createClass({
+  getInitialState () {
+    console.log(this.props.vals);
+    return {
+      markup:this.props.vals
+    };
+  },
+  _update:function(event){
+    this.setState({markup:event.target.value});
+    this.props.updateMethod(event.target.value);
+  },
+  render:function(){
+        return (
+          <textarea value={this.state.markup} onChange={this._update.bind(this)}/>
+        );
+    }
+});
+
+ReactDOM.render(<DisplayBox />,document.getElementById("container"));

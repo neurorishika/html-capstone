@@ -1,0 +1,92 @@
+.back{
+      background-color:#aaf65b;
+    }
+.change{
+      margin:30px;
+    }
+.card{
+  position:absolute;
+  width:500px;
+  height:500px;
+  background-color:#1D1F20;
+  transform: translate(-50%, -50%);
+  top: 350px;
+  left: 50%;
+  border-radius:50%;
+  padding:10px;
+}
+.card2{
+  clip-path: inset(0px 0px 0px 0px);
+  position:absolute;
+  width:510px;
+  height:510px;
+  background-color:#E06F16;
+  transform: translate(-50%, -50%);
+  top: 350px;
+  left: 50%;
+  border-radius:50%;
+  padding:0px;
+}
+.color{
+  padding:20px;
+  color:#aaf65b;
+}
+body{
+  font-family:'Unica One';
+}
+.bt{
+  color:#aaf65b;
+  background-color:Transparent;
+  border:none;
+  font-family:'Unica One';
+}
+.pomo{
+  position:absolute;
+  width:200px;
+  height:500px;
+  transform: translate(-50%, -50%);
+  top: 525px;
+  left: 25%;
+  font-size:40px;
+}
+.brek{
+  position:absolute;
+  width:200px;
+  height:500px;
+  transform: translate(-50%, -50%);
+  top: 525px;
+  left: 75%;
+  font-size:40px;
+}
+.prog{
+  position:absolute;
+  width:500px;
+  height:150px;
+  transform: translate(-50%, -50%);
+  top: 210px;
+  left: 50%;
+  font-size:100px;
+  z-index:5;
+}
+.bt:active{
+  border:none;
+}
+.baka{
+  background-color:#1D1F20;
+  position:absolute;
+  width:150px;
+  height:150px;
+  transform: translate(-50%, -50%);
+  top: 75px;
+  left: 50%;
+}
+.brain{
+  position:absolute;
+  width:100px;
+  height:100px;
+  transform: translate(-50%, -50%);
+  top: 150px;
+  left: 45%;
+  
+}
+

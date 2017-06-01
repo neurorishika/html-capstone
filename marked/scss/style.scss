@@ -1,0 +1,20 @@
+$back:#eee;
+$font:'Open Sans',sans serif;
+body{
+  background-color:$back;
+  padding:20px;
+  DisplayBox{
+    font-family:$font;
+    color:white;
+  }
+}
+
+textarea{
+  width:100%;
+  height:500px;
+  vertical-align:top;
+}
+
+Output{
+  color:white;
+}

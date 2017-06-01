@@ -1,0 +1,38 @@
+$backcol:lighten(#af0,45);
+body{
+  background-color:$backcol;
+}
+.header{
+  background-color:green;
+  color:white;
+  top:0;
+  width:100%;
+  height:50px;
+  padding:10px;
+  font-size:20px;
+}
+.leaderboard{
+  top:100px;
+  background-color:green;
+  border-radius:10px 10px 0 0;
+  color:white;
+  font-size:20px;
+  padding:10px;
+}
+.title{
+  position:relative;
+  top:100px;
+  background-color:lighten(grey,30);
+  font-size:20px;
+  padding:10px;
+}
+.block{
+  position:relative;
+  top:100px;
+  background-color:lighten(grey,40);
+  font-size:20px;
+  padding:10px;
+}
+img{
+  width:40px;
+}

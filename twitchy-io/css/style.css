@@ -1,0 +1,36 @@
+body {
+  background-color: #4B3E74;
+  color: #4B3E74;
+  font-family:'Ubuntu Mono';
+}
+
+.back {
+  width: 80%;
+  background-color: Transparent;
+  border: none;
+  margin: 50px 10% 20px 10%;
+  padding: 10px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  transition: 1000ms ease;
+  text-decoration: none;
+  color: black;
+}
+
+.btn {
+  width: 45px;
+  -webkit-transition: width 1s ease-in-out, padding-left 1s ease-in-out, padding-right 1s ease-in-out;
+  -moz-transition: width 1s ease-in-out, padding-left 1s ease-in-out, padding-right 1s ease-in-out;
+  -o-transition: width 1s ease-in-out, padding-left 1s ease-in-out, padding-right 1s ease-in-out;
+  transition: width 1s ease-in-out, padding-left 1s ease-in-out, padding-right 1s ease-in-out;
+}
+
+.btn:hover {
+  width: 15%;
+  /*transition: width 500ms ease-in-out;*/
+}

@@ -1,0 +1,15 @@
+.back{
+      background-color:yellow;
+    }
+.change{
+      margin:30px;
+    }
+.card{
+  width:40%;
+  background-color:#FFFBE9;
+  margin:10% 30% 20% 30%;
+}
+.color{
+  padding:20px;
+  color:yellow;
+}

@@ -1,0 +1,158 @@
+.back{
+      background-color:#aaf65b;
+    }
+.change{
+      margin:30px;
+    }
+.card{
+  position:absolute;
+  width:500px;
+  height:500px;
+  background-color:#1D1F20;
+  transform: translate(-50%, -50%);
+  top: 350px;
+  left: 50%;
+  border-radius:50px;
+  padding:10px;
+}
+.turn1,.turn2{
+  height:30px;
+  width:125px;
+  background-color:#A3724D;
+  border-radius:20px;
+  transition: 1000ms ease;
+  color:white;
+}
+.turn1{
+  position:absolute;
+  top:100px;
+  right:43.5%;
+}
+.turn2{
+  position:absolute;
+  top:100px;
+  left:43.5%;
+}
+.card2{
+  clip-path: inset(0px 0px 0px 0px);
+  position:absolute;
+  width:510px;
+  height:510px;
+  background-color:#E06F16;
+  transform: translate(-50%, -50%);
+  top: 350px;
+  left: 50%;
+  border-radius:50px;
+  padding:0px;
+}
+.color{
+  padding:20px;
+  color:#aaf65b;
+}
+body{
+  font-family:'Unica One';
+}
+.bt{
+  color:#aaf65b;
+  background-color:Transparent;
+  border:none;
+  font-family:'Unica One';
+}
+.choose-x{
+  position:absolute;
+  top:225px;
+  left:30%;
+  font-size:30px;
+  text-align: center;
+}
+.choose-o{
+  position:absolute;
+  top:225px;
+  right:30%;
+  font-size:30px;
+  text-align: center;
+}
+.choose-xo{
+  position:absolute;
+  top:175px;
+  left:30%;
+  font-size:30px;
+}
+.choose-one{
+  position:absolute;
+  top:225px;
+  left:10%;
+  font-size:30px;
+}
+.choose-two{
+  position:absolute;
+  top:225px;
+  left:60%;
+  font-size:30px;
+}
+.choose-p{
+  position:absolute;
+  top:175px;
+  left:15%;
+  font-size:30px;
+}
+.p3{
+  position:absolute;
+  top:175px;
+  left:33%;
+  font-size:30px;
+}
+.number{
+  position:absolute;
+  width:150px;
+  height:150px;
+  display: inline-block;
+}
+.oo{
+  top:20px;
+  left:20px;
+  border-right:thick double #ffffff;
+  border-bottom:thick double #ffffff;
+}
+.oi{
+  top:20px;
+  left:170px;
+  border-bottom:thick double #ffffff;
+}
+.ot{
+  top:20px;
+  left:320px;
+  border-left:thick double #ffffff;
+  border-bottom:thick double #ffffff;
+}
+.io{
+  top:170px;
+  left:20px;
+  border-right:thick double #ffffff;
+}
+.ii{
+  top:170px;
+  left:170px;
+}
+.it{
+  top:170px;
+  left:320px;
+  border-left:thick double #ffffff;
+}
+.to{
+  top:320px;
+  left:20px;
+  border-top:thick double #ffffff;
+  border-right:thick double #ffffff;
+}
+.ti{
+  top:320px;
+  left:170px;
+  border-top:thick double #ffffff;
+}
+.tt{
+  top:320px;
+  left:320px;
+  border-top:thick double #ffffff;
+  border-left:thick double #ffffff;
+}

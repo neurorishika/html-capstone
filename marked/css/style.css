@@ -1,0 +1,18 @@
+body {
+  background-color: #eee;
+  padding: 20px;
+}
+body DisplayBox {
+  font-family: "Open Sans", sans serif;
+  color: white;
+}
+
+textarea {
+  width: 100%;
+  height: 500px;
+  vertical-align: top;
+}
+
+Output {
+  color: white;
+}

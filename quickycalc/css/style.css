@@ -1,0 +1,54 @@
+.back{
+      background-color:#fef65b;
+    }
+.change{
+      margin:30px;
+    }
+.card{
+  position:absolute;
+  width:400px;
+  height:500px;
+  background-color:#1D1F20;
+  transform: translate(-50%, -50%);
+  top: 350px;
+  left: 50%;
+  border-radius:20px;
+  padding:10px;
+}
+.color{
+  padding:20px;
+  color:#fef65b;
+}
+.display-block{
+  background-color:#fef65b;
+  width:100%;
+  height:100px;
+  padding-right:5px;
+}
+.history{
+  color:#1D1F20;
+  text-align:right;
+}
+.inputs{
+  color:#1D1F20;
+  text-align:right;
+  margin-top:-15px;
+}
+.output{
+  color:#1D1F20;
+  text-align:right;
+  margin-top:-5px;
+}
+.btn{
+  font-family:'Unica One';
+  font-weight: bold;
+  margin:10px;
+  margin-top:15px;
+  width:53px;
+  border-radius:20px;
+  color:#1D1F20;
+  background-color:#fef65b;  
+}
+body{
+  font-family:'Unica One';
+}
