@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+   <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" /> -->
+<style>
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 30px/1.8 "PT Serif";
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3,.bgimg-4,.bgimg-5,.bgimg-6,.bgimg-7,.bgimg-8 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("static/ArtsNPhoto.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("static/m1.png");
+  min-height: 600px;
+}
+
+.bgimg-3 {
+  background-image: url("static/ma.jpg");
+  min-height: 600px;
+}
+
+.bgimg-4 {
+  background-image: url("static/interior.jpg");
+  min-height: 600px;
+}
+
+.bgimg-5 {
+  background-image: url("static/sanap.jpg");
+  min-height: 600px;
+}
+.bgimg-6 {
+  background-image: url("static/frac.jpg");
+  min-height: 600px;
+}
+
+.bgimg-7 {
+  background-image: url("static/anime.jpg");
+  min-height: 600px;
+}
+
+.bgimg-8 {
+  background-image: url("static/wattpad.jpg");
+  min-height: 600px;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 40px "Lato", sans-serif;
+  color: #111;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding:0px;
+  overflow: hidden;
+}
+li{
+  float: right;
+  font-family: "Lato";
+  font-size: 20px;
+}
+li a{
+  display: block;
+  color: whitesmoke;
+  opacity: 0.65;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+li a:hover{
+  background-color: #777;
+}
+
+.modal {
+    line-height: 200px;
+    position: fixed;
+    bottom: 0%;
+    right: 5%;
+    opacity: 0.55;
+    margin-top: -100px;
+    margin-left: -150px;
+    border-radius: 5px;
+    text-align: left;
+    z-index: 11; /* 1px higher than the overlay layer */
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f7f7f7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0.75;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #999}
+
+/* Show the dropdown menu on hover */
+li:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+li:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+</head>
+
+
+<body>
+  <div class="modal"><a href="#top" style="text-decoration: none"><img src="static/bk.png" style="height: 50px"></img></a></div>
+  <div class="bgimg-1" id="top">
+    <ul>
+    <li><a href="index.html" style="color:white;opacity:0.85">home </a></li>
+    <li><a href="1.html" style="color:white;opacity:0.85" >contact </a></li>
+    <li><a href="portfolio.html" style="color:white;opacity:0.85">portfolio</a>
+      <div class="dropdown-content">
+        <a href="science.html">Science and Programming</a>
+        <a href="3d.html">Arts and Graphics Design</a>
+        <a href="1.html">Awards and Achievements</a>
+      </div>
+    </li>
+    <li><a href="1.html" style="color:white;opacity:0.85">commercial products</a></li>
+  </ul>
+
+    <a class="border" href="#Science" style="font-size: 30px;text-decoration: none;">
+        <div class="caption">
+            <h3  style="font-size: 75pt;color: #111">Arts and Graphics Design</h3>
+        </div>
+    </a>
+</div>
+
+
+<div class="bgimg-2" id="Science">
+  <a href="science.html"style="text-decoration: none;">
+  <div class="caption">
+    <span class="border" style="top:50%;text-align: left;background-color:transparent;font-size:50px;color: #f7f7f7;position:absolute;left: 10%;">M1 Multiturret Tank<br>
+    <img src="static/Learn2.png" style="height: 40px"></img>
+    </span>
+  </div>
+  </a>
+</div>
+
+
+
+<div class="bgimg-3" id="artp">
+  <a href="artp.html"style="text-decoration: none;">
+  <div class="caption">
+    <span class="border" style="top:50%;text-align: right;background-color:transparent;font-size:50px;color: #f7f7f7;position:absolute;right: 10%;">Mobile Artillery<br>
+    <img src="static/Learn2.png" style="height: 40px"></img>
+    </span>
+  </div>
+  </a>
+</div>
+
+
+<div class="bgimg-4" id="3d">
+  <a href="3d.html"style="text-decoration: none;">
+  <div class="caption">
+    <span class="border" style="top:50%;text-align: left;background-color:transparent;font-size:50px;color: #f7f7f7;position:absolute;left: 10%;">Interior Design<br>
+    <img src="static/Learn2.png" style="height: 40px"></img>
+    </span>
+  </div>
+  </a>
+</div>
+
+<div class="bgimg-5" id="3d">
+  <a href="3d.html"style="text-decoration: none;">
+  <div class="caption">
+    <span class="border" style="top:50%;text-align: right;background-color:transparent;font-size:50px;color: #111;position:absolute;right: 10%;">3D Antarctic<br>Quasi-Military<br>Base<br>
+    <img src="static/Learn.png" style="height: 40px"></img>
+    </span>
+  </div>
+  </a>
+</div>
+
+<div class="bgimg-6" id="Science">
+  <a href="science.html"style="text-decoration: none;">
+  <div class="caption">
+    <span class="border" style="top:50%;text-align: left;background-color:transparent;font-size:50px;color: #f7f7f7;position:absolute;left: 10%;">Fractal Art 1.0<br>
+    <img src="static/Learn2.png" style="height: 40px"></img>
+    </span>
+  </div>
+  </a>
+</div>
+
+
+
+<div class="bgimg-7" id="artp">
+  <a href="artp.html"style="text-decoration: none;">
+  <div class="caption">
+    <span class="border" style="top:50%;text-align: right;background-color:transparent;font-size:50px;color: #f7f7f7;position:absolute;right: 10%;">Anime Art<br>
+    <img src="static/Learn2.png" style="height: 40px"></img>
+    </span>
+  </div>
+  </a>
+</div>
+
+<!--
+<div class="bgimg-8" id="3d">
+  <a href="3d.html"style="text-decoration: none;">
+  <div class="caption">
+    <span class="border" style="top:50%;text-align: left;background-color:transparent;font-size:50px;color: #111;position:absolute;left: 10%;">Wattpad<br>Book Covers<br>
+    <img src="static/Learn.png" style="height: 40px"></img>
+    </span>
+  </div>
+  </a>
+</div>
+-->
+</body>
+</html>

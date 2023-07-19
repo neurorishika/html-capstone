@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="static/styles.css">
+<style>
+a:link{
+  color:inherit;
+}
+a:visited{
+  color:inherit;
+}
+a:hover{
+  color:inherit;
+}
+a:focus{
+  color:inherit;
+}
+a:active{
+  color:inherit;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 30px/1.8 "PT Serif";
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3,.bgimg-4,.bgimg-5,.bgimg-6 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("static/Portfolio.jpeg");
+  min-height: 100%;
+}
+
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 40px "Lato", sans-serif;
+  color: #111;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding:0px;
+  overflow: hidden;
+}
+li{
+  float: right;
+  font-family: "Lato";
+  font-size: 20px;
+}
+li a{
+  display: block;
+  color: whitesmoke;
+  opacity: 0.65;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  transition: 0s display;
+}
+li a:hover{
+  background-color: #777;
+}
+.modal {
+    line-height: 200px;
+    position: fixed;
+    bottom: 0%;
+    right: 5%;
+    opacity: 0.55;
+    margin-top: -100px;
+    margin-left: -150px;
+    border-radius: 5px;
+    text-align: left;
+    z-index: 11; /* 1px higher than the overlay layer */
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f7f7f7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0.75;
+    transition: 0s display;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #999}
+
+/* Show the dropdown menu on hover */
+li:hover .dropdown-content {
+    display: block;
+    transition-delay: 1s;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+li:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+<body>
+
+<div class="modal"><a href="#top" style="text-decoration: none"><img src="static/bk.png" style="height: 50px"></img></a></div>
+<div class="bgimg-1" id="top">
+  <ul>
+  <li><a href="index.html" style="color:white;opacity:0.85">home </a></li>
+  <li><a href="1.html" style="color:white;opacity:0.85" >contact </a></li>
+  <li><a href="portfolio.html" style="color:white;opacity:0.85">portfolio</a>
+    <div class="dropdown-content">
+      <a href="science.html">Science and Programming</a>
+      <a href="3d.html">Arts and Graphics Design</a>
+      <a href="1.html">Awards and Achievements</a>
+    </div>
+  </li>
+  <li><a href="1.html" style="color:white;opacity:0.85">commercial products</a></li>
+</ul>
+  <div class="caption">
+<a class="border" href="#intro" style="font-size: 70px;text-decoration: none;"><b style="font-family: 'Nunito Sans',sans-serif;color: white"> Awards and Achievements<br></b>
+
+  </div>
+</div>
+
+<a href="#one"style="text-decoration: none;color:white;">
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;" id="intro">
+  <a href="#one"style="text-decoration: none;">
+  <h3 style="text-align:center;font-size: 175px;font-family: 'Oswald',sans-serif;">Hello</h3>
+  <p style="font-size: 20px;text-align: center;font-family: 'Nunito Sans',sans-serif;">This is me, Saptarshi Soham Mohanta aka TechnoSap, but you can call me Sapta or Sappy.<br> You might think I am just another student/freelancer but thats not all who i am... </p>
+
+</div>
+</a>
+<!--
+<a href="#two"style="text-decoration: none;">
+<div class="bgimg-2" id="one">
+  <div class="caption">
+    <span class="border" style="text-align: right;background-color:transparent;font-size:25px;color: #f7f7f7;position:absolute;right: 10%;font-style: italic">I'm a Computer Geek</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:20px 80px;text-align: justify;">
+    <p style="font-style: italic;text-align: center">"A programmer never gives up. Check again. Always Check again.."</p>
+  </div>
+</div>
+</a>
+
+<a href="#three"style="text-decoration: none;">
+<div class="bgimg-3" id="two">
+  <div class="caption">
+    <span class="border" style="text-align: left;background-color:transparent;font-size:25px;color: #111;position: absolute;left: 100px;font-style: italic">And a Science and Mathematics Nerd</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:20px 80px;text-align: justify;">
+    <p style="font-style: italic;text-align: center">"A scientists journey never ends..."</p>
+  </div>
+</div>
+</a>
+
+<a href="#four"style="text-decoration: none;">
+<div class="bgimg-4" id="three">
+  <div class="caption">
+    <span class="border" style="text-align: right;background-color:transparent;font-size:25px;color: #111;position:absolute;right: 10%;font-style: italic">And a Game Developer</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:20px 80px;text-align: justify;">
+    <p style="font-style: italic;text-align: center">"Beauty lies in making stories and imagination come alive..."</p>
+  </div>
+</div>
+</a>
+
+<a href="#five"style="text-decoration: none;">
+<div class="bgimg-5" id="four">
+  <div class="caption">
+    <span class="border" style="text-align: left;background-color:transparent;font-size:25px;color: #f7f7f7;position: absolute;left: 100px;font-style: italic">And also an artist</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:20px 80px;text-align: justify;">
+    <p style="font-style: italic;text-align: center">"What is life if not art..."</p>
+  </div>
+</div
+</a>
+
+<div class="bgimg-6" id="five" style="top: 10%">
+<div style="position: absolute;top: 10%; text-align: justify;margin-left: 45%;margin-right: 2%; background-color: #282E34">
+<p style="font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;color:ghostwhite;font-size: 20px;padding:0px 30px;font-style:oblique">About Me:</p>
+<p style="font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;color:ghostwhite;font-size: 15px;padding:0px 30px">I have always been interested in learning new things and applying my skills in real life. I am adept at organizing projects and managing teams.Thus I am equally comfortable being a diligent team player and if need be, I am ready to take on the role of a leader. I have a deep-seated love for Science and Mathematics. In my free time, I learned electronics and robotics and am Adept at Arduino. <br><br> In 2015, I was awarded the Jagdish Bose Junior Talent Search Scholarship and was also a Mamraj Agarwal Foundation Awardee for Outstanding Performance in ICSE. I also participated in an International Student Exchange Program (2015-16), titled "Hacking Space", organized by NCSM, India and Chabot Space and Science Centre, California (USA) where, as the Team Leader, I designed and developed a prototype air purification assembly targeting Secondary Infections in Hospitals.<br><br>I also pursue Coding as a Passion. I qualified for ICPC for Schools (2016) Code Competition by CodeChef. I am well versed with Java, HTML, CSS, Javascript, Matlab, XML, LaTeX and R. I am in the process of learning C, C++, Python, SQL, PHP and Cuda-C. I am also a freelancer. I design Logos, Banners, Posters, Leaflets and other media for companies and businesses.I am also experienced in Quantum Chemistry Software like Chemcraft, Avogadro, ORCA 4.0.0, Dalton and Gamess-Firefly.<br><br>I specialize in 3d Graphics and I am adept at blender and CAD software. I am also a google play android developer and as a freelancer, I have developed apps for Indian Oil Corporation and also a revolutionary keyboard app, dxMath, aimed at students and professionals. I believe that expansive knowledge allows one to look at the problem in hand from a new angle and I utilize this in my everyday life.</p>
+</div>
+</div>
+-->
+</body>
+</html>
