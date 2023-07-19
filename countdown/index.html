@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Relationship Countdown</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    
+    h1 {
+      margin-top: 50px;
+      color: #333333;
+    }
+    
+    .countdown-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+    
+    .countdown-item {
+      display: flex;
+      margin: 10px;
+    }
+    
+    .countdown-label {
+      font-size: 24px;
+      margin-right: 5px;
+    }
+    
+    .countdown-value {
+      font-size: 40px;
+      font-weight: bold;
+    }
+    
+    .countup-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+    
+    .countup-label {
+      font-size: 24px;
+    }
+    
+    .countup-value {
+      font-size: 40px;
+      font-weight: bold;
+    }
+  </style>
+  <script>
+    function updateCountdown() {
+      var targetDate = new Date("August 25, 2023 07:15:00 EST").getTime();
+      var now = new Date().getTime();
+      var timeDifference = targetDate - now;
+      
+      var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+      
+      document.getElementById("countdown-days").innerHTML = days;
+      document.getElementById("countdown-hours").innerHTML = hours;
+      document.getElementById("countdown-minutes").innerHTML = minutes;
+      document.getElementById("countdown-seconds").innerHTML = seconds;
+    }
+    
+    function updateCountup() {
+      var startDate = new Date("July 30, 2022 14:00:00 EST").getTime();
+      var now = new Date().getTime();
+      var timeDifference = now - startDate;
+      
+      var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+      
+      document.getElementById("countup-days").innerHTML = days;
+      document.getElementById("countup-hours").innerHTML = hours;
+      document.getElementById("countup-minutes").innerHTML = minutes;
+      document.getElementById("countup-seconds").innerHTML = seconds;
+    }
+    
+    setInterval(updateCountdown, 1000);
+    setInterval(updateCountup, 1000);
+  </script>
+</head>
+<body>
+  <h1>Till we are together again....</h1>
+  <div class="countdown-container">
+    <div class="countdown-item">
+      <span class="countdown-label">Days:</span>
+      <span class="countdown-value" id="countdown-days"></span>
+    </div>
+    <div class="countdown-item">
+      <span class="countdown-label">Hours:</span>
+      <span class="countdown-value" id="countdown-hours"></span>
+    </div>
+    <div class="countdown-item">
+      <span class="countdown-label">Minutes:</span>
+      <span class="countdown-value" id="countdown-minutes"></span>
+    </div>
+    <div class="countdown-item">
+      <span class="countdown-label">Seconds:</span>
+      <span class="countdown-value" id="countdown-seconds"></span>
+    </div>
+  </div>
+  
+  <div class="countup-container">
+    <h2>Together since...</h2>
+    <div class="countdown-item">
+      <span class="countdown-label">Days:</span>
+      <span class="countdown-value" id="countup-days"></span>
+    </div>
+    <div class="countdown-item">
+      <span class="countdown-label">Hours:</span>
+      <span class="countdown-value" id="countup-hours"></span>
+    </div>
+    <div class="countdown-item">
+      <span class="countdown-label">Minutes:</span>
+      <span class="countdown-value" id="countup-minutes"></span>
+    </div>
+    <div class="countdown-item">
+      <span class="countdown-label">Seconds:</span>
+      <span class="countdown-value" id="countup-seconds"></span>
+    </div>
+  </div>
+</body>
+</html>
