@@ -1,4 +1,4 @@
-Karavaan 2018 website by Saumil Shah + Saptarshi SM
+Karavaan 2018 website by Saumil Shah + Rishika Mohanta
 
 A fun little one-pager with modal-ized (is that a word?) 'pages'
 and a cool depth effect (click on a menu item to see what I mean).
